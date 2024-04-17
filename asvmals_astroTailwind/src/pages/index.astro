@@ -1,0 +1,264 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Slider from '../components/Slider.astro';
+import LogoSlider from '../components/LogoSlider.astro';
+import sportplatzPic from '../images/index/sportplatz.png';
+import tennisPic from '../images/index/tennis.png';
+import kartePic from '../images/index/karte.png';
+import badmintonPic from '../images/index/badminton.svg';
+import tennisPic2 from '../images/index/tennis.svg';
+import volleyPic from '../images/index/volleyball.svg';
+import triathlonPic from '../images/index/triathlon.svg';
+import schwimmenPic from '../images/index/schwimmen.svg';
+import leichtathletikPic from '../images/index/leichtathletik.svg';
+import bogenschützenPic from '../images/index/bogenschützen.svg';
+import sportschützenPic from '../images/index/sportschützen.svg';
+import fussballPic from '../images/index/fussball.svg';
+import yoseikanPic from '../images/index/yoseikan.svg';
+import jubelPic from '../images/index/jubel.jpg';
+
+
+---
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>ASV Mals</title>
+    <link rel="preload" href="/fonts/univermag.ttf" as="font" type="font/ttf" crossorigin>
+
+
+    <style is:global>
+        @import '../styles/global.css'; 
+      </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+   
+    <Header></Header>
+
+    <Slider></Slider>
+
+
+
+<div class="flex font-univermag flex-col lg:flex-row">
+    <div class="w-full lg:w-1/2 h-100 bg-primary flex flex-col text-white relative">
+        <div class="w-full h-px bg-secondary mt-8"></div>
+        <div class="relative ml-7 text-white">
+            <div class="text-5xl md:text-6xl font-univermag">Der Verein</div>
+        </div>
+    
+        <div class="flex-grow"></div> 
+    
+        <div class="relative ml-7 mb-7 mt-16 lg:mt-0" >
+            <table class="text-4xl md:text-5xl">
+                <tr>
+                    <td id="count1" class="pr-8">850+</td>
+                    <td class="font-oskari-g2 text-xl md:text-2xl uppercase">Mitglieder</td>
+                </tr>
+                <tr>
+                    <td id="count1" >10</td>
+                    <td class="font-oskari-g2 text-xl md:text-2xl uppercase">Sektionen</td>
+                </tr>
+                <tr>
+                    <td id="count3">1965</td>
+                    <td class="font-oskari-g2 text-xl md:text-2xl uppercase">gegründet</td>
+                </tr>
+            </table>
+                        
+        </div>
+    </div>
+    
+    <div class="w-full lg:w-1/2 h-100 flex items-center justify-center">
+        <img src={sportplatzPic.src} alt="Sportplatz">
+    </div>
+</div>
+
+<div class="flex font-univermag flex-col lg:flex-row">
+    <div class="order-1 lg:order-2 w-full lg:w-1/2 h-100 bg-primary flex flex-col text-white relative">
+        <div class="w-full h-px bg-secondary mt-8"></div>
+        <div class="relative ml-7 text-white">
+            <div class="text-5xl md:text-6xl font-univermag">Infos</div>
+        </div>
+    
+        <div class="flex-grow"></div> 
+    
+        <div class="relative ml-7 mb-7 mt-16 lg:mt-0" >
+            <table class="text-xl lg:text-2xl">
+                <tr>
+                    <td class="font-oskari-g2 uppercase hover:text-secondary"><a href="/geschichte">Geschichte</a></td>
+                </tr>
+                <tr>
+                    <td class="font-oskari-g2 uppercase hover:text-secondary"><a href="/vorstand" >Vorstand</a></td>
+                </tr>
+                <tr>
+                    <td class="font-oskari-g2 uppercase hover:text-secondary"><a href="/downloads" >Downloads</a></td>
+                </tr>
+            </table>
+                        
+        </div>
+    </div>
+    
+    <div class="order-2 lg:order-1 w-full lg:w-1/2 h-100 flex items-center justify-center">
+        <img src={tennisPic.src} alt="Tennisplatz">
+    </div>
+</div>
+
+
+<div class="flex font-univermag flex-col lg:flex-row">
+    <div class="w-full lg:w-1/2 h-100 bg-primary flex flex-col text-white relative">
+        <div class="w-full h-px bg-secondary mt-8"></div>
+        <div class="relative ml-7 text-white">
+            <div class="text-5xl md:text-6xl font-univermag">Sektionen</div>
+        </div>
+    
+        <div class="flex-grow"></div> 
+    
+        <div class="relative ml-7 mb-7" >
+            <ul class="font-oskari-g2 text-xl lg:text-2xl uppercase mt-8">
+                <li class="mb-4">
+                    <a href="/fussball" class="flex items-center hover:text-secondary">
+                        <img src={fussballPic.src} alt="Fussball" class="inline-block mr-7 lg:mr-14" />
+                        Fussball
+                    </a>
+                </li>
+
+        <li class="mb-4">
+            <a href="#" class="flex items-center hover:text-secondary">
+                <img src={badmintonPic.src} alt="Badminton" class="inline-block mr-7 lg:mr-14">
+                Badminton
+            </a>
+        </li>
+        <li class="mb-4">
+            <a href="#" class="flex items-center hover:text-secondary">
+                <img src={tennisPic2.src} alt="Tennis" class="inline-block mr-7 lg:mr-14">
+                Tennis
+            </a>
+        </li>
+        <li class="mb-4">
+            <a href="#" class="flex items-center hover:text-secondary">
+                <img src={sportschützenPic.src} alt="Sportschützen" class="inline-block mr-7 lg:mr-14">
+                Sportschützen
+            </a>
+        </li>
+        <li class="mb-4">
+            <a href="#" class="flex items-center hover:text-secondary">
+                <img src={triathlonPic.src} alt="Triathlon" class="inline-block mr-7 lg:mr-14">
+                Triathlon
+            </a>
+        </li>
+        <li class="mb-4">
+            <a href="#" class="flex items-center hover:text-secondary">
+                <img src={yoseikanPic.src} alt="Yoseikan Budo" class="inline-block mr-7 lg:mr-14">
+                Yoseikan Budo
+            </a>
+        </li>
+        <li class="mb-4">
+            <a href="#" class="flex items-center hover:text-secondary">
+                <img src={bogenschützenPic.src} alt="Bogenschützen" class="inline-block mr-7 lg:mr-14">
+                Bogenschützen
+            </a>
+        </li>
+        <li class="mb-4">
+            <a href="#" class="flex items-center hover:text-secondary">
+                <img src={volleyPic.src} alt="Volleyball" class="inline-block mr-7 lg:mr-14">
+                Volleyball
+            </a>
+        </li>
+        <li class="mb-4">
+            <a href="#" class="flex items-center hover:text-secondary">
+                <img src={leichtathletikPic.src} alt="Leichtathletik" class="inline-block mr-7 lg:mr-14">
+                Leichtathletik
+            </a>
+        </li>
+        <li>
+            <a href="#" class="flex items-center hover:text-secondary">
+                <img src={schwimmenPic.src} alt="Schwimmen" class="inline-block mr-7 lg:mr-14">
+                Schwimmen
+            </a>
+        </li>
+    </ul>
+                        
+        </div>
+    </div>
+    
+    <div class="w-full lg:w-1/2 h-100 flex items-center justify-center">
+        <img src={kartePic.src} alt="Mals-Karte" style="max-width: 100%; height: auto;">
+    </div>
+</div>
+
+
+<!-- <LogoSlider></LogoSlider> -->
+
+    <section class="Kontakt">
+        <!-- Kontakt Section -->
+        <div class="w-full h-0.5 bg-primary mt-14"></div>
+    
+        <div class="relative ml-7">
+            <div class="text-5xl md:text-6xl font-univermag text-primary">Kontakt</div>
+        </div>
+    
+        <div class="w-full h-0.5 bg-primary mt-20"></div>
+        <div class="relative ml-7">
+            <table class="border-collapse border-transparent font-oskari-g2 text-primary">
+                <tr>
+                    <td class="pr-20 uppercase font-bold">Telefon</td>
+                    <td>+39 335 5921234</td>
+                </tr>
+                <tr>
+                    <td class="pr-20 uppercase font-bold">Email</td>
+                    <td>sportverein@mals.it</td>
+                </tr>
+            </table>
+        </div>
+        <div class="w-full h-0.5 bg-primary"></div>
+    
+        <div class="w-full h-0.5 bg-primary mt-8"></div>
+        <div class="relative ml-7">
+            <table class="border-collapse border-transparent font-oskari-g2 text-primary">
+                <tr>
+                    <td class="pr-8 uppercase font-bold">Pec</td>
+                    <td>sportverein@pec.mals.it</td>
+                </tr>
+                <tr>
+                    <td class="pr-8 uppercase font-bold">Adresse</td>
+                    <td>Marktgasse 13, 39024 Mals</td>
+                </tr>
+                <tr>
+                    <td class="pr-8 uppercase font-bold">Steuernummer</td>
+                    <td>82028500211</td>
+                </tr>
+                <tr>
+                    <td class="pr-8 uppercase font-bold">Mwst.Nr.</td>
+                    <td>01448330215</td>
+                </tr>
+            </table>
+        </div>
+        <div class="w-full h-0.5 bg-primary"></div>
+    
+        <div class="w-full h-0.5 bg-primary mt-8"></div>
+        <div class="relative ml-7">
+            <table class="border-collapse border-transparent font-oskari-g2 text-primary">
+                <tr>
+                    <td class="pr-24 uppercase font-bold">Social</td>
+                    <td>Facebook</td>
+                </tr>
+            </table>
+        </div>
+        <div class="w-full h-0.5 bg-primary"></div>
+        <div class="h-8"></div>
+    </section>
+    
+     
+
+    
+    <Footer></Footer>
+
+</body>
+</html>
+

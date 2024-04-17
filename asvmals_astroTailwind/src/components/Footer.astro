@@ -1,0 +1,29 @@
+---
+import arrow from '../images/arrow.png';
+
+---
+
+<footer class="mt-auto bg-white font-univermag py-4 relative">
+    <div class="flex justify-between mx-7">
+        <a href="/impressum" class="hover:underline">Impressum/Privacy</a>
+		<span>ASV MALS &copy;</span>
+        
+        <div class="hidden md:flex absolute inset-y-0 left-1/2 transform -translate-x-1/2 items-center">
+            <a href="#" class="hover:text-gray-300" id="backToTop">
+                <img src={arrow.src} alt="Arrow" />
+            </a>
+         </div>
+    </div> 
+</footer>
+
+
+
+<script>
+    document.getElementById("backToTop").addEventListener("click", function(event) {
+        event.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+</script>
