@@ -1,0 +1,116 @@
+---
+const { Sektionsleiter, Telefon, Email, Image1Big, Image1Small, Image2Big, Image2Small, Image1Alt, Image2Alt} = Astro.props;
+---
+
+
+<div class="flex font-univermag flex-col lg:flex-row">
+    <div class="w-full lg:w-1/2 h-100 bg-primary flex flex-col text-white relative">
+        <div class="w-full h-px bg-secondary mt-8"></div>
+        <div class="relative ml-7 text-white">
+            <div class="text-5xl md:text-6xl font-univermag">Infos</div>
+        </div>
+    
+        <div class="flex-grow"></div> 
+    
+        <div class="relative ml-7 mb-7 mt-16 lg:mt-0 lg:flex">
+            <div class="hidden lg:block">
+                <table class="text-xl font-oskari-g2">
+                    <tr>
+                        <td class="pr-10 uppercase">Sektionsleiter</td>
+                        <td>{Sektionsleiter}</td>
+                    </tr>
+                    <tr>
+                        <td class="uppercase">Telefon</td>
+                        <td>{Telefon}</td>
+                    </tr>
+                    <tr>
+                        <td class="uppercase">Email</td>
+                        <td>{Email}</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="lg:hidden">
+                <table class="text-xl font-oskari-g2 mb-7">
+                    <tr>
+                        <td class="pr-10 uppercase">Sektionsleiter</td>
+                    </tr>
+                    <tr>
+                        <td>{Sektionsleiter}</td>
+                    </tr>
+                    <tr>
+                        <td class="uppercase">Telefon</td>
+                    </tr>
+                    <tr>
+                        <td>{Telefon}</td>
+                    </tr>
+                    <tr>
+                        <td class="uppercase">Email</td>
+                    </tr>
+                    <tr>
+                        <td>{Email}</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="lg:ml-auto">
+                <table class="text-xl font-oskari-g2 uppercase mr-7 lg:text-right mt-4 lg:mt-0">
+                    <tr>
+                        <td>Web</td>
+                    </tr>
+                    <tr>
+                        <td>Instagram</td>
+                    </tr>
+                    <tr>
+                        <td>Facebook</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="w-full lg:w-1/2 h-100 flex items-center justify-center">
+        <img class="lg:hidden object-cover" src={Image1Small} alt={Image1Alt} />
+        <img class="lg:block hidden object-cover" src={Image1Big} alt={Image1Alt} />
+    </div>
+</div>
+
+
+
+<div class="flex font-univermag flex-col lg:flex-row">
+    <div class="order-1 lg:order-2 w-full lg:w-1/2 h-100 bg-primary flex flex-col text-white relative">
+        <div class="w-full h-px bg-secondary mt-8"></div>
+        <div class="relative ml-7 text-white">
+        </div>
+    
+        <div class="flex-grow"></div> 
+    
+        <div class="flex lg:justify-end">
+            <div class="ml-7 mb-7 mt-16 lg:mt-0">
+                <table class="font-oskari-g2 text-2xl uppercase lg:text-right mr-7">
+                    <tr>
+                        <td><a href="/news">News</a></td>
+                    </tr>
+                    <tr>
+                        <td>Kader</td>
+                    </tr>
+                    <tr>
+                        <td>Erfolge</td>
+                    </tr>
+                    <tr>
+                        <td>Fotogalerie</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+        
+    </div>
+    
+    <div class="order-2 lg:order-1 w-full lg:w-1/2 h-100 flex items-center justify-center">
+        <img class="hidden lg:block" src={Image2Big} alt={Image2Alt} />
+        <img class="lg:hidden" src={Image2Small} alt={Image2Alt} />
+
+    </div>
+</div>

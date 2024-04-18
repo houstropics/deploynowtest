@@ -1,13 +1,6 @@
 ---
-import pregamePic from '../images/fussball/pregame.png';
-import spacePic from '../images/fussball/space.png';
-import wieserPic from '../images/fussball/wieser.png';
-import tizianPic from '../images/fussball/tizian.png';
-import torjubelPic from '../images/fussball/torjubel.png';
-import mentaPic from '../images/fussball/menta.png';
-import schoepfPic from '../images/fussball/schoepf.png';
-import ceolPic from '../images/fussball/ceol.png';
-import trainingPic from '../images/fussball/training.png';
+const { image1, image2, image3, image4, image5, image6, image7, image8, image9} = Astro.props;
+const { image1Alt, image2Alt, image3Alt, image4Alt, image5Alt, image6Alt, image7Alt, image8Alt, image9Alt} = Astro.props;
 ---
 
 
@@ -15,31 +8,31 @@ import trainingPic from '../images/fussball/training.png';
 
 <div class="gallery-container">
     <div class="gallery-item" data-index="1">
-        <img src={pregamePic.src} alt="Mannschaft" />
+        <img src={image1} alt={image1Alt} />
     </div>
     <div class="gallery-item" data-index="2">
-        <img src={spacePic.src} alt="Mannschaft" />
+        <img src={image2} alt={image2Alt}  />
     </div>
     <div class="gallery-item" data-index="3">
-        <img src={wieserPic.src} alt="Mannschaft" />
+        <img src={image3} alt={image3Alt}  />
     </div>
     <div class="gallery-item" data-index="4">
-        <img src={ceolPic.src} alt="Mannschaft" />
+        <img src={image4} alt={image4Alt}  />
     </div>
     <div class="gallery-item" data-index="5">
-        <img src={trainingPic.src} alt="Mannschaft" />
+        <img src={image5} alt={image5Alt}  />
     </div>
     <div class="gallery-item" data-index="6">
-        <img src={tizianPic.src} alt="Mannschaft" />
+        <img src={image6} alt={image6Alt}  />
     </div>
     <div class="gallery-item" data-index="7">
-        <img src={mentaPic.src} alt="Mannschaft" />
+        <img src={image7} alt={image7Alt}  />
     </div>
     <div class="gallery-item" data-index="8">
-        <img src={torjubelPic.src} alt="Mannschaft" />
+        <img src={image8} alt={image8Alt}  />
     </div>
     <div class="gallery-item" data-index="9">
-        <img src={schoepfPic.src} alt="Mannschaft" />
+        <img src={image9} alt={image9Alt}  />
     </div>
 
 </div>
