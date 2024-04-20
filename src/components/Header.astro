@@ -1,10 +1,10 @@
 <header class="bg-primary text-white font-oskari-g2 h-8 uppercase">
     <div class="flex justify-between items-center text-2xl lg:mx-7 mx-3">
-        <a href="/" class="p-0 font-univermag">ASV MALS</a>
+        <a href="/" class="p-0 font-univermag hover:text-secondary">ASV MALS</a>
         <nav class="hidden md:block">
             <ul class="flex space-x-4 p-0">
                 <li class="relative">
-                    <a href="#" class="hover:text-gray-300 p-0">Sektionen</a>
+                    <a href="#" class="hover:text-secondary p-0">Sektionen</a>
                     <ul class="absolute z-10 hidden bg-white border border-gray-200 py-2 mt-1 rounded-md">
                         <li>
                             <a href="/fussball" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Fussball</a>
@@ -12,11 +12,11 @@
                         <li>
                             <a href="/badminton" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Badminton</a>
                         </li>
-                        <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Tennis</a></li>
+                        <li><a href="/volleyball" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Volleyball</a></li>
                     </ul>
                 </li>
-                <li><a href="/geschichte" class="hover:text-gray-300 p-0">Geschichte</a></li>
-                <li><a href="/kontakt" class="hover:text-gray-300 p-0">Kontakt</a></li>
+                <li><a href="/geschichte" class="hover:text-secondary p-0">Geschichte</a></li>
+                <li><a href="/kontakt" class="hover:text-secondary p-0">Kontakt</a></li>
             </ul>
         </nav>
         <button class="block md:hidden" id="burger">
@@ -27,7 +27,7 @@
     </div>
 </header>
 
-<ul class="md:hidden z-10 hidden bg-white border border-gray-200 rounded-md right-0" id="mobileMenu">
+<ul class="md:hidden z-10 hidden bg-white border border-gray-200 font-oskari-g2 uppercase rounded-md right-0" id="mobileMenu">
 	<li>
 		<a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100" id="mobiledropdown">Sektionen</a>
 		<ul class="hidden bg-white border border-gray-200 py-2 mt-1 rounded-md" id="dropdown">
@@ -35,9 +35,9 @@
 				<a href="/fussball" class="block px-8 py-2 text-gray-800 hover:bg-gray-100">Fussball</a>
 			</li>
 			<li>
-				<a href="#" class="block px-8 py-2 text-gray-800 hover:bg-gray-100">Badminton</a>
+				<a href="/badminton" class="block px-8 py-2 text-gray-800 hover:bg-gray-100">Badminton</a>
 			</li>
-			<li><a href="#" class="block px-8 py-2 text-gray-800 hover:bg-gray-100">Tennis</a></li>
+			<li><a href="/volleyball" class="block px-8 py-2 text-gray-800 hover:bg-gray-100">Volleyball</a></li>
 	   </ul>
 	</li>
 	<li><a href="/geschichte" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Geschichte</a></li>
@@ -46,34 +46,44 @@
 
 
 <script>
-const dropdownTrigger = document.querySelector('.relative');
-const dropdownMenu = dropdownTrigger.querySelector('ul');
-const burgerButton = document.getElementById('burger');
-const mobileMenu = document.getElementById('mobileMenu');
-const mobiledropdown = document.getElementById('mobiledropdown');
-const dropdown = document.getElementById('dropdown');
+    const dropdownTrigger = document.querySelector('.relative');
+    const dropdownMenu = dropdownTrigger.querySelector('ul');
+    const burgerButton = document.getElementById('burger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobiledropdown = document.getElementById('mobiledropdown');
+    const dropdown = document.getElementById('dropdown');
 
-// Function to toggle menu visibility
-function toggleMenu() {
-    dropdownMenu.classList.toggle('hidden');
-    mobileMenu.classList.toggle('hidden');
-}
+    function toggleMenu() {
+        dropdownMenu.classList.toggle('hidden');
+        mobileMenu.classList.toggle('hidden');
+    }
 
-dropdownTrigger.addEventListener('mouseenter', () => {
-    dropdownMenu.classList.remove('hidden');
-});
+    function showMenu() {
+        dropdownMenu.classList.remove('hidden');
+        mobileMenu.classList.remove('hidden');
+    }
 
-dropdownTrigger.addEventListener('mouseleave', () => {
-    dropdownMenu.classList.add('hidden');
-});
+    function hideMenu() {
+        dropdownMenu.classList.add('hidden');
+        mobileMenu.classList.add('hidden');
+    }
 
-// Add event listener to burger button
-burgerButton.addEventListener('click', () => {
-    toggleMenu();
-});
+    burgerButton.addEventListener('click', () => {
+        toggleMenu();
+    });
 
-// Add event listener to mobile dropdown
-mobiledropdown.addEventListener('click', () => {
-    dropdown.classList.toggle('hidden');
-});
+    dropdownTrigger.addEventListener('mouseenter', () => {
+        showMenu();
+    });
+
+    dropdownMenu.addEventListener('mouseleave', () => {
+        hideMenu();
+    });
+
+    mobiledropdown.addEventListener('click', () => {
+        dropdown.classList.toggle('hidden');
+    });
 </script>
+
+
+

@@ -8,6 +8,11 @@ import SektionInfo from '../components/SektionInfo.astro';
 import badmintonPic from '../images/index/badminton.svg';
 
 import Banner from '../images/badminton/Banner.jpg';
+import BannerLg from '../images/badminton/BannerLg.png';
+
+import Closeup1 from '../images/badminton/Closeup1.jpg';
+import Pokale from '../images/badminton/Pokale.jpg';
+import PokaleSmall from '../images/badminton/PokaleSmall.jpg';
 import image1 from '../images/badminton/image1.jpg';
 import image2 from '../images/badminton/image2.jpg';
 import image3 from '../images/badminton/image3.jpg';
@@ -18,11 +23,7 @@ import image7 from '../images/badminton/image7.jpg';
 import image8 from '../images/badminton/image8.jpg';
 import image9 from '../images/badminton/image9.jpg';
 
-import raffiPic from '../images/fussball/raffi.jpg';
-import raffiLg from '../images/fussball/raffi_lg.jpg';
-import preGameLg from '../images/fussball/pregameLg.jpg';
-import preGamesd from '../images/fussball/pregame_sd.jpg';
-import MannschaftPic from '../images/fussball/Mannschaft.jpg';
+
 ---
 
 <html lang="en">
@@ -44,7 +45,8 @@ import MannschaftPic from '../images/fussball/Mannschaft.jpg';
   
 	<SektionBanner
 	Sektion="Badminton"
-	Banner={Banner.src}
+	Banner={BannerLg.src}
+	BannerMobile={Banner.src}
 	Icon={badmintonPic.src}
 	/>
 
@@ -57,12 +59,13 @@ import MannschaftPic from '../images/fussball/Mannschaft.jpg';
 	Facebook="https://www.facebook.com/ASVMalsBadminton/" 
 	Web="http://www.badmintonmals.it/"
 	Webadress="www.badmintonmals.it"
-	Image1Big={raffiLg.src} 
-	Image1Small={raffiPic.src} 
-	Image2Big={preGameLg.src}
-	Image2Small={preGamesd.src}
+	Image1Big={Closeup1.src} 
+	Image1Small={Closeup1.src} 
+	Image2Big={PokaleSmall.src}
+	Image2Small={Pokale.src}
 	Image1Alt="Raffael"
 	Image2Alt="Pregame"
+	Fotogalerie="Fotogalerie"
 	/>
 
 	

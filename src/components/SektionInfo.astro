@@ -1,5 +1,5 @@
 ---
-const { Sektionsleiter, Telefon, Email, Insta, Facebook, Web, web2,  Image1Big, Image1Small, Image2Big, Image2Small, Image1Alt, Image2Alt} = Astro.props;
+const { Sektionsleiter, Telefon, Email, Insta, Facebook, Web, Fotogalerie, Kader, News, Image1Big, Image1Small, Image2Big, Image2Small, Image1Alt, Image2Alt} = Astro.props;
 ---
 
 
@@ -91,16 +91,13 @@ const { Sektionsleiter, Telefon, Email, Insta, Facebook, Web, web2,  Image1Big, 
             <div class="ml-7 mb-7 mt-16 lg:mt-0">
                 <table class="font-oskari-g2 text-2xl uppercase lg:text-right mr-7">
                     <tr>
-                        <td><a href="/news">News</a></td>
+                        <td><a href="/news" class="hover:text-secondary" >{News}</a></td>
                     </tr>
                     <tr>
-                        <td>Kader</td>
+                        <td>{Kader}</td>
                     </tr>
                     <tr>
-                        <td>Erfolge</td>
-                    </tr>
-                    <tr>
-                        <td>Fotogalerie</td>
+                        <td><a href="#fotogalerie" class="hover:text-secondary">Fotogalerie</a></td>
                     </tr>
                 </table>
             </div>
@@ -115,3 +112,6 @@ const { Sektionsleiter, Telefon, Email, Insta, Facebook, Web, web2,  Image1Big, 
 
     </div>
 </div>
+
+
+

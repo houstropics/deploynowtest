@@ -1,0 +1,94 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Title from '../components/Title.astro';
+import Gallery from '../components/Gallery.astro';
+import SektionBanner from '../components/SektionBanner.astro';
+import SektionInfo from '../components/SektionInfo.astro';
+import volleyPic from '../images/index/volleyball.svg';
+
+import Banner from '../images/badminton/Banner.jpg';
+import BannerLg from '../images/badminton/BannerLg.png';
+
+import Closeup from '../images/volley/Closeup.webp';
+import CloseupLg from '../images/volley/CloseupLg.png';
+
+import Pokale from '../images/badminton/Pokale.jpg';
+import PokaleSmall from '../images/badminton/PokaleSmall.jpg';
+import image1 from '../images/volley/image1.webp';
+import image2 from '../images/volley/image6.webp';
+import image3 from '../images/volley/image9.webp';
+import image4 from '../images/volley/image4.webp';
+import image5 from '../images/volley/image7.webp';
+import image6 from '../images/volley/image2.webp';
+import image7 from '../images/volley/image5.webp';
+import image8 from '../images/volley/image8.webp';
+import image9 from '../images/volley/image3.webp';
+
+
+
+---
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>ASV Mals</title>
+    <style is:global>
+        @import '../styles/global.css'; 
+      </style>
+    <link rel="preload" href="/fonts/univermag.ttf" as="font" type="font/ttf" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+  <Header></Header>
+
+  
+	<SektionBanner
+	Sektion="Volleyball"
+	Banner={CloseupLg.src}
+	BannerMobile={Banner.src}
+	Icon={volleyPic.src}
+	/>
+
+
+	<SektionInfo 
+	Sektionsleiter="Stefan De March" 
+	Telefon="+39 335 5855123" 
+	Email="malles@badmintonitalia.net"
+	Insta="https://www.instagram.com/asv_mals_badminton/"
+	Facebook="https://www.facebook.com/ASVMalsBadminton/" 
+	Web="http://www.badmintonmals.it/"
+	Webadress="www.badmintonmals.it"
+	Image1Big={CloseupLg.src} 
+	Image1Small={Closeup.src} 
+	Image2Big={PokaleSmall.src}
+	Image2Small={Pokale.src}
+	Image1Alt="Raffael"
+	Image2Alt="Pregame"
+	Fotogalerie="Fotogalerie"
+	/>
+
+	
+  	<Title title="Fotogalerie"/>
+
+	<Gallery 
+	image1={image1.src} image1Alt="volleyball"
+image2={image2.src} image2Alt="volleyball"
+image3={image8.src} image3Alt="volleyball"
+image4={image4.src} image4Alt="volleyball"
+image5={image5.src} image5Alt="volleyball"
+image6={image6.src} image6Alt="volleyball"
+image7={image7.src} image7Alt="volleyball"
+image8={image3.src} image8Alt="volleyball"
+image9={image9.src} image9Alt="volleyball"
+
+	/>
+
+	
+  <Footer></Footer>
+
+</body>
+</html>
