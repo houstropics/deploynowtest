@@ -1,5 +1,5 @@
 ---
-const { Sektionsleiter, Telefon, Email, Image1Big, Image1Small, Image2Big, Image2Small, Image1Alt, Image2Alt} = Astro.props;
+const { Sektionsleiter, Telefon, Email, Insta, Facebook, Web, web2,  Image1Big, Image1Small, Image2Big, Image2Small, Image1Alt, Image2Alt} = Astro.props;
 ---
 
 
@@ -52,20 +52,21 @@ const { Sektionsleiter, Telefon, Email, Image1Big, Image1Small, Image2Big, Image
                     </tr>
                 </table>
             </div>
-            
             <div class="lg:ml-auto">
                 <table class="text-xl font-oskari-g2 uppercase mr-7 lg:text-right mt-4 lg:mt-0">
                     <tr>
-                        <td>Web</td>
+                        <td><a href={Web} class=" hover:text-secondary">Web</a></td>
                     </tr>
                     <tr>
-                        <td>Instagram</td>
+                        <td><a href={Insta} class="hover:text-secondary">Instagram</a></td>
                     </tr>
                     <tr>
-                        <td>Facebook</td>
+                        <td><a href={Facebook} class="hover:text-secondary">Facebook</a></td>
                     </tr>
                 </table>
             </div>
+            
+           
         </div>
         
     </div>

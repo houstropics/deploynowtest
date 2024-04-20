@@ -5,21 +5,23 @@ import Title from '../components/Title.astro';
 import Gallery from '../components/Gallery.astro';
 import SektionBanner from '../components/SektionBanner.astro';
 import SektionInfo from '../components/SektionInfo.astro';
-import Banner from '../images/fussball/bannerFussball.jpg';
-import fussballPic from '../images/fussball/fussball.svg';
+import badmintonPic from '../images/index/badminton.svg';
+
+import Banner from '../images/badminton/Banner.jpg';
+import image1 from '../images/badminton/image1.jpg';
+import image2 from '../images/badminton/image2.jpg';
+import image3 from '../images/badminton/image3.jpg';
+import image4 from '../images/badminton/image4.jpg';
+import image5 from '../images/badminton/image5.jpg';
+import image6 from '../images/badminton/image6.jpg';
+import image7 from '../images/badminton/image7.jpg';
+import image8 from '../images/badminton/image8.jpg';
+import image9 from '../images/badminton/image9.jpg';
+
 import raffiPic from '../images/fussball/raffi.jpg';
 import raffiLg from '../images/fussball/raffi_lg.jpg';
 import preGameLg from '../images/fussball/pregameLg.jpg';
 import preGamesd from '../images/fussball/pregame_sd.jpg';
-import pregamePic from '../images/fussball/pregame.png';
-import spacePic from '../images/fussball/space.png';
-import wieserPic from '../images/fussball/wieser.png';
-import tizianPic from '../images/fussball/tizian.png';
-import torjubelPic from '../images/fussball/torjubel.png';
-import mentaPic from '../images/fussball/menta.png';
-import schoepfPic from '../images/fussball/schoepf.png';
-import ceolPic from '../images/fussball/ceol.png';
-import trainingPic from '../images/fussball/training.png';
 import MannschaftPic from '../images/fussball/Mannschaft.jpg';
 ---
 
@@ -41,17 +43,20 @@ import MannschaftPic from '../images/fussball/Mannschaft.jpg';
 
   
 	<SektionBanner
-	Sektion="Fussball"
+	Sektion="Badminton"
 	Banner={Banner.src}
-	Icon={fussballPic.src}
+	Icon={badmintonPic.src}
 	/>
 
 
 	<SektionInfo 
-	Sektionsleiter="Roland Mur" 
-	Telefon="+39 3772410000" 
-	Email="rolandmur@gmail.com" 
-	Insta="https://www.instagram.com/asvmals_fussball/"
+	Sektionsleiter="Stefan De March" 
+	Telefon="+39 335 5855123" 
+	Email="malles@badmintonitalia.net"
+	Insta="https://www.instagram.com/asv_mals_badminton/"
+	Facebook="https://www.facebook.com/ASVMalsBadminton/" 
+	Web="http://www.badmintonmals.it/"
+	Webadress="www.badmintonmals.it"
 	Image1Big={raffiLg.src} 
 	Image1Small={raffiPic.src} 
 	Image2Big={preGameLg.src}
@@ -64,20 +69,18 @@ import MannschaftPic from '../images/fussball/Mannschaft.jpg';
   	<Title title="Fotogalerie"/>
 
 	<Gallery 
-	image1={pregamePic.src} image1Alt="Aufwärmen"
-	image2={spacePic.src} image2Alt="Kevin Platzgummer"
-	image3={wieserPic.src} image3Alt="Paul Wieser"
-	image4={ceolPic.src} image4Alt="Thomas Ceol"
-	image5={trainingPic.src} image5Alt="Training"
-	image6={tizianPic.src} image6Alt="Tizian Stecher"
-	image7={mentaPic.src} image7Alt="Manuel Gambetta"
-	image8={torjubelPic.src} image8Alt="Torjubel"
-	image9={schoepfPic.src} image9Alt="Jan Schöpf"
+	image1={image1.src} image1Alt="badminton"
+	image2={image2.src} image2Alt="badminton"
+	image3={image8.src} image3Alt="badminton"
+	image4={image4.src} image4Alt="badminton"
+	image5={image5.src} image5Alt="badminton"
+	image6={image6.src} image6Alt="badminton"
+	image7={image7.src} image7Alt="badminton"
+	image8={image3.src} image8Alt="badminton"
+	image9={image9.src} image9Alt="badminton"
 	/>
 
 	
-	<img class="hidden lg:block" src={MannschaftPic.src} alt="Mannschaftsfoto" class="px-2 " />
-
   <Footer></Footer>
 
 </body>
