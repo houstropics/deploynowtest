@@ -70,9 +70,9 @@
     </div>
   <!-- Add pagination -->
   <div class="swiper-pagination"></div>
-  <!-- Add navigation arrows -->
+  <!-- Add navigation arrows
   <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
+  <div class="swiper-button-next"></div> -->
 </div>
 </div>
 </div>
@@ -83,34 +83,40 @@
           import Swiper from 'swiper/bundle';
 
           document.addEventListener('DOMContentLoaded', function () {
-              var swiper = new Swiper('.swiper-container', {
-                  direction: 'horizontal',
-                  loop: true,
-                  centeredSlides: true,
+    var swiper = new Swiper('.swiper-container', {
+        direction: 'horizontal',
+        loop: true,
+        centeredSlides: true,
 
-                  pagination: {
-                      el: '.swiper-pagination',
-                      clickable: true,
-                      dynamicBullets: true,
-                  },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            dynamicBullets: true,
+        },
 
-                  navigation: {
-                      nextEl: '.swiper-button-next',
-                      prevEl: '.swiper-button-prev',
-                  },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
 
-                  autoplay: {
-                      delay: 2000,
-                      disableOnInteraction: false,
-                  },
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+        },
 
-                  speed: 2000,
-                  effect: 'fade',
-                  fadeEffect: {
-                      crossFade: true,
-                  },
-              });
-          });
+        speed: 2000,
+        effect: 'fade',
+        fadeEffect: {
+            crossFade: true,
+        },
+    });
+
+    function slideNext() {
+    swiper.slideNext();
+}
+});
+
+
       </script>
 
 <style>

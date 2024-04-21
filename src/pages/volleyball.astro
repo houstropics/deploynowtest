@@ -6,15 +6,12 @@ import Gallery from '../components/Gallery.astro';
 import SektionBanner from '../components/SektionBanner.astro';
 import SektionInfo from '../components/SektionInfo.astro';
 import volleyPic from '../images/index/volleyball.svg';
-
-import Banner from '../images/badminton/Banner.jpg';
-import BannerLg from '../images/badminton/BannerLg.png';
-
+import BannerSd from '../images/volley/BannerSd.webp';
 import Closeup from '../images/volley/Closeup.webp';
+import CloseupLg2 from '../images/volley/CloseupLg2.jpg';
 import CloseupLg from '../images/volley/CloseupLg.png';
-
-import Pokale from '../images/badminton/Pokale.jpg';
-import PokaleSmall from '../images/badminton/PokaleSmall.jpg';
+import Info2 from '../images/volley/Info2.jpg';
+import Info2Lg from '../images/volley/Info2Lg.png';
 import image1 from '../images/volley/image1.webp';
 import image2 from '../images/volley/image6.webp';
 import image3 from '../images/volley/image9.webp';
@@ -25,8 +22,7 @@ import image7 from '../images/volley/image5.webp';
 import image8 from '../images/volley/image8.webp';
 import image9 from '../images/volley/image3.webp';
 
-
-
+import abschluss from '../images/volley/abschluss.png';
 ---
 
 <html lang="en">
@@ -48,24 +44,20 @@ import image9 from '../images/volley/image3.webp';
   
 	<SektionBanner
 	Sektion="Volleyball"
-	Banner={CloseupLg.src}
-	BannerMobile={Banner.src}
+	Banner={CloseupLg2.src}
+	BannerMobile={BannerSd.src}
 	Icon={volleyPic.src}
 	/>
 
 
 	<SektionInfo 
-	Sektionsleiter="Stefan De March" 
-	Telefon="+39 335 5855123" 
-	Email="malles@badmintonitalia.net"
-	Insta="https://www.instagram.com/asv_mals_badminton/"
-	Facebook="https://www.facebook.com/ASVMalsBadminton/" 
-	Web="http://www.badmintonmals.it/"
-	Webadress="www.badmintonmals.it"
+	Sektionsleiter="Karin Thanei" 
+	Telefon="+39 338 2204398" 
+	Email="karin.thanei@gmail.com"
 	Image1Big={CloseupLg.src} 
 	Image1Small={Closeup.src} 
-	Image2Big={PokaleSmall.src}
-	Image2Small={Pokale.src}
+	Image2Big={Info2Lg.src}
+	Image2Small={Info2.src}
 	Image1Alt="Raffael"
 	Image2Alt="Pregame"
 	Fotogalerie="Fotogalerie"
@@ -86,6 +78,7 @@ image8={image3.src} image8Alt="volleyball"
 image9={image9.src} image9Alt="volleyball"
 
 	/>
+	<img class="hidden lg:block" src={abschluss.src} alt="Teambuilding" class="px-2 " />
 
 	
   <Footer></Footer>

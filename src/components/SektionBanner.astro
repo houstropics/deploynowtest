@@ -20,12 +20,12 @@ const { Banner, BannerMobile, Icon, Sektion } = Astro.props;
       <div style="position: absolute; bottom: 0; left: 0;">
           <table class="mb-4" >
             <tr>
-              <td style="padding-left: 28px;">
+              <td style="padding-left: 28px; min-width: 70px;">
                 <img
                   src={Icon}
                   alt={Sektion}
                   style="width:100px;"
-                  class="hidden lg:inline-block mr-14"
+                  class="hidden lg:inline-block mr-8"
                 />
 				<img
                   src={Icon}
@@ -36,7 +36,7 @@ const { Banner, BannerMobile, Icon, Sektion } = Astro.props;
               </td>
 
 			  <td> 
-                <div class="text-5xl lg:text-8xl font-univermag text-white">{Sektion}</div>
+                <div class="text-5xl lg:text-8xl ml-4 font-univermag text-white">{Sektion}</div>
               </td>
             </tr>
           </table>

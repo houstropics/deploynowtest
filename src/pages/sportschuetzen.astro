@@ -1,0 +1,96 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Title from '../components/Title.astro';
+import Gallery from '../components/Gallery.astro';
+import SektionBanner from '../components/SektionBanner.astro';
+import SektionInfo from '../components/SektionInfo.astro';
+import sportschützenPic from '../images/index/sportschützen.svg';
+
+import Banner from '../images/banner/Schuetzen.jpg';
+
+import Closeup from '../images/sportschuetzen/Closeup.jpg';
+import CloseupLg from '../images/sportschuetzen/CloseupLg.png';
+import Closeup2 from '../images/sportschuetzen/Closeup2.jpg';
+import CloseupLg2 from '../images/sportschuetzen/CloseupLg2.png';
+
+
+import image1 from '../images/sportschuetzen/image1.jpg';
+import image2 from '../images/sportschuetzen/image6.jpg';
+import image3 from '../images/sportschuetzen/image9.jpg';
+import image4 from '../images/sportschuetzen/image4.jpg';
+import image5 from '../images/sportschuetzen/image7.jpg';
+import image6 from '../images/sportschuetzen/image2.jpg';
+import image7 from '../images/sportschuetzen/image5.jpg';
+import image8 from '../images/sportschuetzen/image8.jpg';
+import image9 from '../images/sportschuetzen/image3.jpg';
+import abschluss from '../images/sportschuetzen/abschluss.jpg';
+
+
+
+---
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>ASV Mals</title>
+    <style is:global>
+        @import '../styles/global.css'; 
+      </style>
+    <link rel="preload" href="/fonts/univermag.ttf" as="font" type="font/ttf" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+  <Header></Header>
+
+  
+	<SektionBanner
+	Sektion="Sport-schuetzen"
+	Banner={Banner.src}
+	BannerMobile={Banner.src}
+	Icon={sportschützenPic.src}
+	/>
+
+
+	<SektionInfo 
+	Sektionsleiter="Elias Winkler" 
+	Telefon="+39 347 8523590" 
+	Email="sportschuetzen.mals@hotmail.com"
+	Image1Big={CloseupLg.src} 
+	Image1Small={Closeup.src} 
+	Image2Big={CloseupLg2.src}
+	Image2Small={Closeup2.src}
+	Image1Alt="Raffael"
+	Image2Alt="Pregame"
+	Fotogalerie="Fotogalerie"
+	Insta=""
+	Facebook=""
+	Web=""
+	/>
+
+	
+  	<Title title="Fotogalerie"/>
+
+	<Gallery 
+	image1={image7.src} image1Alt="sportschützen"
+image2={image1.src} image2Alt="sportschützen"
+image3={image4.src} image3Alt="sportschützen"
+image4={image5.src} image4Alt="sportschützen"
+image5={image2.src} image5Alt="sportschützen"
+image6={image6.src} image6Alt="sportschützen"
+image7={image3.src} image7Alt="sportschützen"
+image8={image9.src} image8Alt="sportschützen"
+image9={image8.src} image9Alt="sportschützen"
+
+	/>
+
+	<img class="hidden lg:block" src={abschluss.src} alt="Zielscheibe" class="px-2 " />
+
+	
+  <Footer></Footer>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Title from '../components/Title.astro';
+import Gallery from '../components/Gallery.astro';
+import SektionBanner from '../components/SektionBanner.astro';
+import SektionInfo from '../components/SektionInfo.astro';
+import yoseikanPic from '../images/index/yoseikan.svg';
+
+import Banner from '../images/yoseikan/Banner.jpg';
+
+import Info1Lg from '../images/yoseikan/Info1Lg.png';
+import Info1 from '../images/yoseikan/Info1.jpg';
+import Info2Lg from '../images/yoseikan/Info2Lg.png';
+import Info2 from '../images/yoseikan/Info2.jpg';
+
+
+import image1 from '../images/yoseikan/image1.jpg';
+import image2 from '../images/yoseikan/image2.jpg';
+import image3 from '../images/yoseikan/image3.jpg';
+import image4 from '../images/yoseikan/image4.jpg';
+import image5 from '../images/yoseikan/image5.jpg';
+import image6 from '../images/yoseikan/image6.jpg';
+import image7 from '../images/yoseikan/image7.jpg';
+import image8 from '../images/yoseikan/image8.jpg';
+import image9 from '../images/yoseikan/image9.jpg';
+
+import abschluss from '../images/yoseikan/abschluss.jpg';
+
+
+
+---
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>ASV Mals</title>
+    <style is:global>
+        @import '../styles/global.css'; 
+      </style>
+    <link rel="preload" href="/fonts/univermag.ttf" as="font" type="font/ttf" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+  <Header></Header>
+
+  
+	<SektionBanner
+	Sektion="Yoseikan Budo"
+	Banner={Banner.src}
+	BannerMobile={Banner.src}
+	Icon={yoseikanPic.src}
+	/>
+
+
+	<SektionInfo 
+	Sektionsleiter="Alexander Niedermair" 
+	Telefon="+39 340 5912306" 
+	Email="alex_niede@rolmail.net"
+	Image1Big={Info1Lg.src} 
+	Image1Small={Info1.src} 
+	Image2Big={Info2Lg.src}
+	Image2Small={Info2.src}
+	Image1Alt="Raffael"
+	Image2Alt="Pregame"
+	Fotogalerie="Fotogalerie"
+	Insta=""
+	Facebook=""
+	Web="https://yoseikan-mals.jimdofree.com"
+	/>
+
+	
+  	<Title title="Fotogalerie"/>
+
+	<Gallery 
+	image1={image1.src} image1Alt="yoseikan"
+	image2={image3.src} image2Alt="yoseikan"
+	image3={image2.src} image3Alt="yoseikan"
+	image4={image4.src} image4Alt="yoseikan"
+	image5={image5.src} image5Alt="yoseikan"
+	image6={image6.src} image6Alt="yoseikan"
+	image7={image7.src} image7Alt="yoseikan"
+	image8={image8.src} image8Alt="yoseikan"
+	image9={image9.src} image9Alt="yoseikan"
+	/>
+
+	<img class="hidden lg:block" src={abschluss.src} alt="Zielscheibe" class="px-2 " />
+
+	
+  <Footer></Footer>
+
+</body>
+</html>
