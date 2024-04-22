@@ -2,7 +2,7 @@
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import beitraege from '../docs/OeffentlicheBeitraege22_23.pdf';
-
+import Title from '../components/Title.astro';
 ---
 
 <html lang="en">
@@ -26,21 +26,18 @@ import beitraege from '../docs/OeffentlicheBeitraege22_23.pdf';
    
     <Header></Header>
 
+    <Title title="Downloads"/>
+
    
     <section class="Kontakt">
-        <!-- Kontakt Section -->
-        <div class="w-full h-0.5 bg-primary mt-14"></div>
+       
     
-        <div class="relative ml-7">
-            <div class="text-6xl font-univermag text-primary">Downloads</div>
-        </div>
-    
-        <div class="w-full h-0.5 bg-primary mt-20"></div>
+        <div class="w-full h-0.5 bg-primary"></div>
         <div class="relative ml-7">
             <table class="border-collapse border-transparent font-oskari-g2 text-primary">
                 <tr>
                     <td class="pr-20 uppercase font-bold">Öffentliche Beiträge 2022 & 2023</td>
-						<td>
+						<td class="pr-3Y">
                             <a href={beitraege} target="_blank">Download</a>
 						</td>
                 
