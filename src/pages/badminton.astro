@@ -22,6 +22,8 @@ import image6 from '../images/badminton/image6.webp';
 import image7 from '../images/badminton/image7.webp';
 import image8 from '../images/badminton/image8.webp';
 import image9 from '../images/badminton/image9.webp';
+import abschluss from '../images/badminton/abschluss.webp';
+
 
 
 ---
@@ -45,7 +47,7 @@ import image9 from '../images/badminton/image9.webp';
   
 	<SektionBanner
 	Sektion="Badminton"
-	Banner={BannerLg.src}
+	Banner={Closeup1.src}
 	BannerMobile={Banner.src}
 	Icon={badmintonPic.src}
 	/>
@@ -55,11 +57,12 @@ import image9 from '../images/badminton/image9.webp';
 	Sektionsleiter="Stefan De March" 
 	Telefon="+39 335 5855123" 
 	Email="malles@badmintonitalia.net"
+	Instayes="Instagram"
 	Insta="https://www.instagram.com/asv_mals_badminton/"
 	Facebook="https://www.facebook.com/ASVMalsBadminton/" 
-	Web="http://www.badmintonmals.it/"
-	Webadress="www.badmintonmals.it"
-	Image1Big={Closeup1.src} 
+	Web="www.badmintonmals.it"
+	Webadress="http://www.badmintonmals.it"
+	Image1Big={BannerLg.src} 
 	Image1Small={Closeup1.src} 
 	Image2Big={PokaleSmall.src}
 	Image2Small={Pokale.src}
@@ -74,14 +77,16 @@ import image9 from '../images/badminton/image9.webp';
 	<Gallery 
 	image1={image1.src} image1Alt="badminton"
 	image2={image2.src} image2Alt="badminton"
-	image3={image8.src} image3Alt="badminton"
+	image3={image6.src} image3Alt="badminton"
 	image4={image4.src} image4Alt="badminton"
 	image5={image5.src} image5Alt="badminton"
-	image6={image6.src} image6Alt="badminton"
+	image6={image9.src} image6Alt="badminton"
 	image7={image7.src} image7Alt="badminton"
 	image8={image3.src} image8Alt="badminton"
-	image9={image9.src} image9Alt="badminton"
+	image9={image8.src} image9Alt="badminton"
 	/>
+
+	<img class="hidden lg:block" src={abschluss.src} alt="Federball" class="px-2 " />
 
 	
   <Footer></Footer>

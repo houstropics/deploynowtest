@@ -1,5 +1,6 @@
 ---
-const { Sektionsleiter, Telefon, Email, Insta, Facebook, Web, Fotogalerie, Kader, News, Image1Big, Image1Small, Image2Big, Image2Small, Image1Alt, Image2Alt} = Astro.props;
+const { Sektionsleiter, Telefon, Email, Insta, Instayes, Facebook, Facebookyes, Web, Webadress, Fotogalerie, Kader, News, Image1Big, Image1Small, Image2Big, Image2Small, Image1Alt, Image2Alt} = Astro.props;
+
 ---
 
 
@@ -52,21 +53,45 @@ const { Sektionsleiter, Telefon, Email, Insta, Facebook, Web, Fotogalerie, Kader
                     </tr>
                 </table>
             </div>
-            <div class="lg:ml-auto">
-                <table class="text-xl font-oskari-g2 uppercase mr-7 lg:text-right mt-4 lg:mt-0">
-                    <tr>
-                        <td><a href={Web} class=" hover:text-secondary">Web</a></td>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const webLink1 = document.getElementById('web-link-1');
+                    const webLink2 = document.getElementById('web-link-2');
+                    const webLink3 = document.getElementById('web-link-3');
+                    if (webLink1) {
+                        webLink1.addEventListener('click', function() {
+                            window.location.href = webLink1.dataset.url;
+                        });
+                    }
+                    if (webLink2) {
+                        webLink2.addEventListener('click', function() {
+                            window.location.href = webLink2.dataset.url;
+                        });
+                    }
+                    if (webLink3) {
+                        webLink3.addEventListener('click', function() {
+                            window.location.href = webLink3.dataset.url;
+                        });
+                    }
+                });
+            </script>
+            <div class="lg:ml-auto lg:flex-col-reverse">
+                <table class="text-xl font-oskari-g2 uppercase mr-7 lg:text-right  mt-4 lg:mt-0">
+                    <tr>  
+                        <td id="web-link-1" data-url={Webadress} style="cursor: pointer;" class="hover:text-secondary">{Web}</td>
                     </tr>
                     <tr>
-                        <td><a href={Insta} class="hover:text-secondary">Instagram</a></td>
+                        <td id="web-link-2" data-url={Insta} style="cursor: pointer;" class="hover:text-secondary">{Instayes}</td>
                     </tr>
                     <tr>
-                        <td><a href={Facebook} class="hover:text-secondary">Facebook</a></td>
+                        <td id="web-link-3" data-url={Facebook} style="cursor: pointer;" class="hover:text-secondary">{Facebookyes}</td>
                     </tr>
                 </table>
             </div>
             
            
+
         </div>
         
     </div>
