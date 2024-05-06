@@ -1,0 +1,59 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Title from '../components/Title.astro';
+import Gallery from '../components/Gallery.astro';
+import SektionBanner from '../components/SektionBanner.astro';
+import SektionInfo from '../components/SektionInfo.astro';
+import sportplatzPic from '../images/index/sportplatz.webp';
+
+
+import badmintonPic from '../images/index/badminton.svg';
+
+import Banner from '../images/badminton/Banner.webp';
+import BannerLg from '../images/badminton/BannerLg.webp';
+---
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>ASV Mals</title>
+    <style is:global>
+        @import '../styles/global.css'; 
+      </style>
+    <link rel="preload" href="/fonts/univermag.ttf" as="font" type="font/ttf" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+  <Header></Header>
+
+  
+	<SektionBanner
+	Sektion="Badminton"
+	Banner=
+	BannerMobile={}
+	Icon=
+	/>
+
+
+	<SektionInfo 
+	Sektionsleiter="Stefan De March" 
+	Telefon="+39 335 5855123" 
+	Email="malles@badmintonitalia.net"
+	Instayes="Instagram"
+	Image1Big={sportplatzPic.src} 
+	Image1Small=
+	Image1Alt="Raffael"
+	/>
+
+	
+
+	
+	
+  <Footer></Footer>
+
+</body>
+</html>
