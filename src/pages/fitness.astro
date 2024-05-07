@@ -5,7 +5,8 @@ import SektionBanner from '../components/SektionBanner.astro';
 import SektionShort from '../components/SektionShort.astro';
 import sportplatzPic from '../images/index/sportplatz.webp';
 
-import triathlonPic from '../images/index/triathlon.svg';
+import leichtathletikPic from '../images/index/leichtathletik.svg';
+import fitness from '../images/fitness/fitness.jpg';
 
 import biking from '../images/triathlon/biking.jpg';
 
@@ -30,19 +31,19 @@ import biking from '../images/triathlon/biking.jpg';
 
   
 	<SektionBanner
-	Sektion="Triathlon"
-	Banner={biking.src}
-	BannerMobile={biking.src}
-	Icon={triathlonPic.src}
+	Sektion="Fitness"
+	Banner={fitness.src}
+	BannerMobile={fitness.src}
+	Icon={leichtathletikPic.src}
 	/>
 
 
 	<SektionShort
-	Sektionsleiter="Rudolf Hölbling" 
-	Telefon="+39 335 6187231" 
+	Sektionsleiter="Michaela Abart" 
+	Telefon="+39 339 8128593"
 	Image1Big={sportplatzPic.src} 
 	Image1Small={sportplatzPic.src} 
-	Image1Alt="Raffael"
+	Image1Alt="sportplatz"
 	/>
 
 	

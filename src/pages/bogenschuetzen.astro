@@ -5,9 +5,8 @@ import SektionBanner from '../components/SektionBanner.astro';
 import SektionShort from '../components/SektionShort.astro';
 import sportplatzPic from '../images/index/sportplatz.webp';
 
-import triathlonPic from '../images/index/triathlon.svg';
-
-import biking from '../images/triathlon/biking.jpg';
+import bogenschützenPic from '../images/index/bogenschützen.svg';
+import bogenschuetzen from '../images/bogenschuetzen/bogenschuetzen.jpg';
 
 
 ---
@@ -30,19 +29,21 @@ import biking from '../images/triathlon/biking.jpg';
 
   
 	<SektionBanner
-	Sektion="Triathlon"
-	Banner={biking.src}
-	BannerMobile={biking.src}
-	Icon={triathlonPic.src}
+	Sektion="Bogenschuetzen"
+	Banner={bogenschuetzen.src}
+	BannerMobile={bogenschuetzen.src}
+	Icon={bogenschützenPic.src}
 	/>
 
 
 	<SektionShort
-	Sektionsleiter="Rudolf Hölbling" 
-	Telefon="+39 335 6187231" 
+	Sektionsleiter="René Guizzo" 
+	Telefon="+39 340 6386843"
+	Emailyes="Email"
+	Email="guizzo.rene94@gmail.com" 
 	Image1Big={sportplatzPic.src} 
 	Image1Small={sportplatzPic.src} 
-	Image1Alt="Raffael"
+	Image1Alt="sportplatz"
 	/>
 
 	

@@ -46,7 +46,7 @@ const { Sektionsleiter, Telefon, Email, Emailyes, Insta, Instayes, Facebook, Fac
                         <td>{Telefon}</td>
                     </tr>
                     <tr>
-                        <td class="uppercase font-bold">Email</td>
+                        <td class="uppercase font-bold">{Emailyes}</td>
                     </tr>
                     <tr>
                         <td>{Email}</td>
@@ -102,42 +102,4 @@ const { Sektionsleiter, Telefon, Email, Emailyes, Insta, Instayes, Facebook, Fac
         <img class="lg:block hidden object-cover" src={Image1Big} alt={Image1Alt} />
     </div>
 </div>
-
-
-
-<div class="flex font-univermag flex-col lg:flex-row">
-    <div class="order-1 lg:order-2 w-full lg:w-1/2 h-100 bg-primary flex flex-col text-white relative">
-        <div class="w-full h-px bg-secondary mt-8"></div>
-        <div class="relative ml-7 text-white">
-        </div>
-    
-        <div class="flex-grow"></div> 
-    
-        <div class="flex lg:justify-end">
-            <div class="ml-7 mb-7 mt-16 lg:mt-0">
-                <table class="font-oskari-g2 text-2xl uppercase lg:text-right mr-7">
-                    <tr>
-                        <td><a href="/news" class="hover:text-secondary" >{News}</a></td>
-                    </tr>
-                    <tr>
-                        <td>{Kader}</td>
-                    </tr>
-                    <tr>
-                        <td><a href="#fotogalerie" class="hover:text-secondary">Fotogalerie</a></td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        
-        
-    </div>
-    
-    <div class="order-2 lg:order-1 w-full lg:w-1/2 h-100 flex items-center justify-center">
-        <img class="hidden lg:block" src={Image2Big} alt={Image2Alt} />
-        <img class="lg:hidden" src={Image2Small} alt={Image2Alt} />
-
-    </div>
-</div>
-
-
 

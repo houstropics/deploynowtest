@@ -3,12 +3,9 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import SektionBanner from '../components/SektionBanner.astro';
 import SektionShort from '../components/SektionShort.astro';
-import sportplatzPic from '../images/index/sportplatz.webp';
-
-import triathlonPic from '../images/index/triathlon.svg';
-
-import biking from '../images/triathlon/biking.jpg';
-
+import tennisPic2 from '../images/index/tennis.svg';
+import tennisPic from '../images/banner/BannerTennisplatz.webp';
+import tennisball from '../images/tennis/tennisball.png';
 
 ---
 
@@ -30,19 +27,21 @@ import biking from '../images/triathlon/biking.jpg';
 
   
 	<SektionBanner
-	Sektion="Triathlon"
-	Banner={biking.src}
-	BannerMobile={biking.src}
-	Icon={triathlonPic.src}
+	Sektion="Tennis"
+	Banner={tennisPic.src}
+	BannerMobile={tennisPic.src}
+	Icon={tennisPic2.src}
 	/>
 
 
 	<SektionShort
-	Sektionsleiter="Rudolf Hölbling" 
-	Telefon="+39 335 6187231" 
-	Image1Big={sportplatzPic.src} 
-	Image1Small={sportplatzPic.src} 
-	Image1Alt="Raffael"
+	Sektionsleiter="René Pfeifer" 
+	Telefon="+39 347 2532777"
+	Emailyes="Email"
+	Email="tennis@asvmals.com" 
+	Image1Big={tennisball.src} 
+	Image1Small={tennisball.src} 
+	Image1Alt="sportplatz"
 	/>
 
 	

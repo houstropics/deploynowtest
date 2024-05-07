@@ -2,8 +2,6 @@
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Title from '../components/Title.astro';
-
-
 ---
 
 <html lang="en">
@@ -13,13 +11,11 @@ import Title from '../components/Title.astro';
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>ASV Mals</title>
-    <!-- Include global CSS first -->
     <style is:global>
         @import '../styles/global.css'; 
       </style>
     <link rel="preload" href="/fonts/univermag.ttf" as="font" type="font/ttf" crossorigin>
 
-    <!-- Then include Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
